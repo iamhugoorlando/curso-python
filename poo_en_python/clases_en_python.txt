@@ -1,0 +1,18 @@
+# programacion orientada a objetos en python
+
+# los objetos nos permiten modelar objetos de la vida real, estos objetos van a tener atributos y metodos
+
+# permite definir tipos propios
+# permite manejar datos y logica en un solo contenedor
+# las clases son como moldes para crear un objeto
+
+# los objetos tienen atributos que se pueden definir al momento de inicializar un nuevo objeto o directamente en la instancia
+# las clases pueden tener variables de clase, variables de instancia y variables locales
+
+# isinstance y hasattr definen a una variabe como privada en python aunque python no tenga el concepto de private en las
+# variables
+
+# un metodo clave que las clases deben tener es __init__
+# otro es __str__
+# existen metodos estaticos, de clase, de instancia, getters y setters
+
