@@ -7,6 +7,7 @@ import random
 
 def run(): # inicializamos la funcion run
 
+    # Escribi mi propio codigo desde la linea 11 hasta la 22
     name = str(raw_input('Ingresa tu nombre: '))
     print('Hola ' + name)
 
@@ -20,6 +21,8 @@ def run(): # inicializamos la funcion run
         else:
             print('Lo siento mucho :(')
 
+    # A partir de estas lineas es codigo propio del curso
+    # desde las lines 25 al 42 codigo propio del curso
     number_found = False
     random_numer = random.randint(0,20)
 
