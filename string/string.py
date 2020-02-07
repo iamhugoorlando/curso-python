@@ -26,6 +26,6 @@ print(name.find('H')) # retorna el indice donde se encuentre H
 hola = 'Hola'
 print(hola)
 print(hola[1:])
-print(hola[1:3])
-print(hola[1:6:2])
-print(hola[::-1])
+print(hola[1:3]) # no se incluye el indice 3
+print(hola[1:6:2]) # recorre todo el str pero en salto de 2
+print(hola[::-1]) # acceder al str desde el final al principio
