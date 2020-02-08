@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from flask import Flask, render_template, request,flash
+from flask import Flask, render_template, request,flash, redirect
 from contact_models import Contact
 
 app = Flask(__name__)
@@ -28,6 +28,21 @@ def add_contact():
 
     return render_template('add_contact.html')
 
+@app.router(r'/contacts/<uid>', methods=['GET'])
+def contact.details(uid):
+    contact = Contact.get_by_id(int(uid))
+
+    if not contact:
+        return redirect('/', code=301)
+
+    return render_template('contact.html', contact=contact)
+
+
+@app.router(r'/delete', methods=['POST'])
+def delete_contact():
+    contact  = Contact.get_by_id(int(request.form.get('uid')))
+    contact.key.delete()
+    return redirect('/contacts/{}'.format(contact.key.id()))
 
 
 
