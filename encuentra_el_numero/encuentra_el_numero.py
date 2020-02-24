@@ -8,11 +8,11 @@ import random
 def run(): # inicializamos la funcion run
 
     # Escribi mi propio codigo desde la linea 11 hasta la 22
-    name = str(raw_input('Ingresa tu nombre: '))
+    name = input('Ingresa un numero: ')
     print('Hola ' + name)
 
     empecemos = 'Si'
-    queres_jugar = str(raw_input('Queres jugar?: '))
+    queres_jugar = input('Queres jugar?')
     jugar = queres_jugar
 
     for i in queres_jugar:
@@ -27,7 +27,7 @@ def run(): # inicializamos la funcion run
     random_numer = random.randint(0,20)
 
     while not number_found:
-        number = int(raw_input('Ingresa un numero: '))
+        number = input('Ingresa un numero: ')
 
         if number == random_numer:
             print('Felicidades ' + (name) + ',' + ' encontraste el numero!')
