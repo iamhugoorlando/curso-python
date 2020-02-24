@@ -114,7 +114,7 @@ def decipher(message): # recibimos el mensaje
 def run():
 
     while True:
-        command = str(raw_input(''' ---*---*---*---*---*---*---*---
+        command = input(''' ---*---*---*---*---*---*---*---
          
          Bienvenido a criptografia. ¿Que deseas hacer?
          
@@ -122,15 +122,15 @@ def run():
          [d]ecifrar mensajes
          [s]salir  
          
-         '''))
+         ''')
 
         if command == 'c':
-            message = str(raw_input('Escribe tu mensaje: '))
+            message = input('Escribe tu mensaje: ')
             cypher_message = cypher(message)
             print(cypher_message)
 
         elif command == 'd':
-            message = str(raw_input('Escribe tu mensaje cifrado: '))
+            message = input('Escribe tu mensaje cifrado: ')
             decipher_message = decipher(message)
             print(decipher_message)
         elif command == 's':
